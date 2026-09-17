@@ -5,6 +5,7 @@ Each top-level directory is a package whose contents mirror `$HOME`.
 | Package | Files |
 |---------|-------|
 | `tmux`  | `~/.tmux.conf` |
+| `vim`   | `~/.vimrc` (WSL: yanks also go to the Windows clipboard) |
 
 ## Install
 
