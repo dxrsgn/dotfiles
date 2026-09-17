@@ -2,6 +2,11 @@ set expandtab ts=4 sw=4 autoindent ruler number
 filetype plugin indent on
 set showcmd
 
+" Russian layout: normal-mode commands work without switching layouts
+" (insert mode is unaffected). Only Cyrillic keys are remapped.
+let &langmap = 'ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯЖЭХЪБЮЁ;ABCDEFGHIJKLMNOPQRSTUVWXYZ:"{}<>~,фисвуапршолдьтщзйкыегмцчняжэхъбюё;abcdefghijklmnopqrstuvwxyz\;''[]\,.`'
+set nolangremap
+
 " WSL: copy yanks to the Windows clipboard.
 " clip.exe mangles UTF-8, so convert to UTF-16LE first.
 if executable('clip.exe')
