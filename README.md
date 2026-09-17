@@ -32,5 +32,7 @@ existing binding is overwritten.
 ### vim
 
 - WSL: yanks are also copied to the Windows clipboard (via `clip.exe`).
+- WSL: `\p` / `\P` paste from the Windows clipboard (visual `\p` replaces the
+  selection). Plain `p` still pastes vim's own registers.
 - Russian layout: `langmap` makes normal-mode commands work on ЙЦУКЕН
   (`о` = `j`, `Ж` = `:`, …); insert mode is unaffected.
